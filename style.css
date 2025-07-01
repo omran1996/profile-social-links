@@ -2,66 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0 auto;
-    padding: 0  ;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: hsl(0, 0%, 8%);
-    font-family: "Inter", sans-serif;
-    color: hsl(0, 0%, 100%);
-    font-size: 14px;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 130px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-.cart {
-    width: 300px;
-    border-radius: 10px;
-    background-color:hsl(0, 0%, 10%);
-    padding: 20px;
+.image img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.image img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    margin-left: 80px;
+.title h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.title p {
+  color: hsl(75, 94%, 57%);
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .text {
-    margin-bottom: 20px;
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-.titel {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.titel h2 {
-    margin-bottom: 20px;
-}
-
-.titel p {
-    color: hsl(75, 94%, 57%);
+  font-size: 13px;
+  color: hsl(0, 0%, 70%);
+  margin-bottom: 20px;
 }
 
 .links button {
-    background-color: hsl(0, 0%, 20%);
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 ;
-    border: none;
-    border-radius: 5px;
-    color: white;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.links button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 10%);
 }
 
